@@ -2,4 +2,4 @@
 
 Under Construction
 
-mailto:kustiawanto.halim@gmail.com for bug report
+kustiawanto.halim@gmail.com for bug report

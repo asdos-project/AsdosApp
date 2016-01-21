@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.register.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/primaryColor"
+            android:elevation="6sp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+        <ImageView
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:adjustViewBounds="true"
+            android:layout_below="@id/toolbarEditProfile"
+            android:id="@+id/profileEditProfileImageView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="68dp"
+            android:src="@drawable/prof_pic" />
+
+        <EditText
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameEditProfileEditText"
+            android:layout_centerHorizontal="true"
+            android:hint="Name"
+            android:layout_below="@id/profileEditProfileImageView"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:layout_marginTop="24sp"/>
+
+        <EditText
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailEditProfileEditText"
+            android:layout_below="@id/nameEditProfileEditText"
+            android:layout_alignRight="@id/nameEditProfileEditText"
+            android:layout_alignLeft="@id/nameEditProfileEditText"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:layout_marginTop="8sp"/>
+
+        <EditText
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/schoolEditProfileEditText"
+            android:hint="School"
+            android:layout_alignLeft="@+id/emailEditProfileEditText"
+            android:layout_alignRight="@+id/emailEditProfileEditText"
+            android:layout_below="@id/emailEditProfileEditText"
+            android:layout_marginTop="8sp"/>
+
+        <EditText
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/majorEditProfileEditText"
+            android:hint="Major"
+            android:layout_alignLeft="@+id/emailEditProfileEditText"
+            android:layout_alignRight="@+id/emailEditProfileEditText"
+            android:layout_below="@id/schoolEditProfileEditText"
+            android:layout_marginTop="8sp"/>
+
+        <Button
+            android:id="@+id/submitEditProfileButton"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/majorEditProfileEditText"
+            android:text="Submit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48sp"/>
+
+    </RelativeLayout>
+</ScrollView>

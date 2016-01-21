@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8sp">
+
+        <LinearLayout
+            android:id="@+id/timelineLinearTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/userProfileTimelineImageView"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:src="@drawable/prof_pic"
+                android:adjustViewBounds="true" />
+
+            <TextView
+                android:id="@+id/userNameTimelineTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Saya"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8sp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="8sp">
+                <TextView
+                    android:id="@+id/dateTimelineTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18 Jan 18:00"
+                    android:textSize="12sp"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/timelineLinearMiddle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timelineLinearTop"
+            android:layout_margin="4sp" >
+
+            <TextView
+                android:id="@+id/questionTimelineTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kak, bedanya jurusan Teknik Sipil dan Teknik Arsitektur itu apa ya?"
+                android:textSize="18sp"
+                android:layout_marginLeft="4sp"
+                android:layout_marginRight="4sp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/timelineLinearBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timelineLinearMiddle">
+
+            <TextView
+                android:id="@+id/topikTimelineTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teknik"
+                android:layout_marginLeft="8sp"
+                android:padding="2sp"
+                android:background="#BDBDBD"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/topikTimelineTextView">
+
+                <TextView
+                    android:id="@+id/jumlahJawabTimelineTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 jawaban"
+                    android:layout_marginTop="4sp"
+                    android:layout_marginLeft="9sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8sp">
+                <ImageView
+                    android:id="@+id/jawabTimelineButton"
+                    android:layout_width="100sp"
+                    android:layout_height="26sp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/but_jawab"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

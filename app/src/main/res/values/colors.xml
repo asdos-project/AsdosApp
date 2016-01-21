@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <!--<color name="primary_text_default_material_light">#ffffff</color>-->
+    <!--<color name="holo_light_primary">#03a9f4</color>-->
+    <!--<color name="primary_material_light">#00bcd4</color>-->
+    <!--<color name="primary_dark_material_light">#bdbdbd</color>-->
+    <!--<color name="accent_material_light">#00d3ee</color>-->
+    <!--<color name="background_material_light">#ffffff</color>-->
+    <!--<color name="primary_text_disabled_material_light">#41ffffff</color>-->
+    <!--<color name="black">#000000</color>-->
+    <!--<color name="foreground_material_light">#ffffff</color>-->
+    <!--<color name="secondary_text_default_material_dark">#80ffffff</color>-->
+    <color name="primaryColor">#00afef</color>
+    <color name="accentColor">#0091ea</color>
+</resources>

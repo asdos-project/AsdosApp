@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.register.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="24sp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/primaryColor"
+            android:elevation="6sp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+        <ImageView
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:adjustViewBounds="true"
+            android:layout_below="@id/toolbarRegister"
+            android:id="@+id/profileEditProfileImageView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="68dp"
+            android:src="@drawable/prof_pic" />
+
+        <EditText
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameEditProfileEditText"
+            android:layout_centerHorizontal="true"
+            android:hint="Name"
+            android:layout_below="@id/profileEditProfileImageView"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:layout_marginTop="24sp"/>
+
+        <EditText
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/usernameRegisterEditText"
+            android:hint="User Name"
+            android:layout_alignLeft="@+id/nameEditProfileEditText"
+            android:layout_alignRight="@+id/nameEditProfileEditText"
+            android:layout_below="@id/nameEditProfileEditText"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:layout_marginTop="8sp"/>
+
+        <EditText
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailEditProfileEditText"
+            android:layout_below="@id/usernameRegisterEditText"
+            android:layout_alignRight="@id/usernameRegisterEditText"
+            android:layout_alignLeft="@id/usernameRegisterEditText"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:layout_marginTop="8sp"/>
+
+        <EditText
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/passwordRegisterEditText"
+            android:layout_below="@id/emailEditProfileEditText"
+            android:layout_alignRight="@id/emailEditProfileEditText"
+            android:layout_alignLeft="@id/emailEditProfileEditText"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:layout_marginTop="8sp"/>
+
+        <RadioGroup
+            android:id="@+id/userTypeRadioGroup"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/passwordRegisterEditText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8sp">
+            <RadioButton
+                android:id="@+id/adikRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adik"/>
+            <RadioButton
+                android:id="@+id/kakakRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kakak"
+                android:layout_marginLeft="24sp"/>
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/schoolEditProfileEditText"
+            android:hint="School"
+            android:layout_alignLeft="@+id/passwordRegisterEditText"
+            android:layout_alignRight="@+id/passwordRegisterEditText"
+            android:layout_below="@id/userTypeRadioGroup"
+            android:layout_marginTop="8sp"/>
+
+        <EditText
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/majorEditProfileEditText"
+            android:hint="Kelas"
+            android:layout_alignLeft="@+id/passwordRegisterEditText"
+            android:layout_alignRight="@+id/passwordRegisterEditText"
+            android:layout_below="@id/schoolEditProfileEditText"
+            android:layout_marginTop="8sp"/>
+
+    </RelativeLayout>
+</ScrollView>

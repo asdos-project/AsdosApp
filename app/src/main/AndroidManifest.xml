@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.asdos.asdosapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AsdosTheme">
+
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/title_activity_splash"
+            android:theme="@style/AsdosTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mainMenu.MainActivity"
+            android:theme="@style/AsdosTheme.NoActionBar">
+        </activity>
+
+        <activity 
+            android:name=".auth.login.LoginSocialActivity"
+            android:theme="@style/AsdosTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".auth.login.LoginActivity"
+            android:label="Login"
+            android:theme="@style/AsdosTheme.NoActionBar"
+            android:parentActivityName=".auth.login.LoginSocialActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".auth.login.LoginSocialActivity" />
+        </activity>
+
+        <activity
+            android:name=".auth.register.RegisterActivity"
+            android:label="Register"
+            android:theme="@style/AsdosTheme.NoActionBar"
+            android:parentActivityName=".auth.login.LoginSocialActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".auth.login.LoginSocialActivity" />
+        </activity>
+
+        <activity
+            android:name=".mainMenu.profile.ProfileKakakActivity"
+            android:label="Profile"
+            android:theme="@style/AsdosTheme.NoActionBar"
+            android:parentActivityName=".mainMenu.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mainMenu.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".mainMenu.profile.ProfileAdikActivity"
+            android:label="Profile"
+            android:theme="@style/AsdosTheme.NoActionBar"
+            android:parentActivityName=".mainMenu.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mainMenu.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".mainMenu.profile.EditProfileActivity"
+            android:label="Profile"
+            android:theme="@style/AsdosTheme.NoActionBar"
+            android:parentActivityName=".mainMenu.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mainMenu.MainActivity" />
+        </activity>
+
+    </application>
+
+</manifest>

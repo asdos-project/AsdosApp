@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".mainMenu.profile.ProfileKakakActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarProfileKakak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/primaryColor"
+            android:elevation="6sp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="175sp"
+            android:id="@+id/profileKakakImageView"
+            android:layout_below="@+id/toolbarProfileKakak"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:padding="8sp"
+            android:layout_marginBottom="16sp"
+            android:src="@drawable/prof_pic"
+            />
+
+        <TextView
+            android:id="@+id/nameKakakTextView"
+            android:text="Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profileKakakImageView"
+            android:layout_centerHorizontal="true"
+            android:textSize="28sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/jurusanTextView"
+            android:text="Jurusan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameKakakTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8sp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/universitasTextView"
+            android:text="Universitas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jurusanTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8sp"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/bintangImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="20sp"
+            android:layout_below="@id/universitasTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            android:src="@drawable/star1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/levelTextView"
+            android:text="Level : Sesuatu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bintangImageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8sp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/jumlahJawabTextView"
+            android:text="Jawab : 0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/levelTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4sp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/pcTextView"
+            android:text="PC : 0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jumlahJawabTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4sp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/aboutMeKakakTextView"
+            android:text="About Me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pcTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24sp"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/aboutMeKakakDetTextView"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aboutMeKakakTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16sp"
+            android:layout_marginLeft="24sp"
+            android:layout_marginRight="24sp"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_marginBottom="24sp"/>
+
+    </RelativeLayout>
+</ScrollView>

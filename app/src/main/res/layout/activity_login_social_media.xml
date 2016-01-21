@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".auth.login.LoginSocialActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/atasLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/loginLogoImageView"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:layout_marginBottom="20sp"
+                    android:background="#151515"
+                    android:src="@drawable/img_login"/>
+
+                <TextView
+                    android:id="@+id/deskripsiLoginTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/loginLogoImageView"
+                    android:text="Tanya sepuasnya info/trik/bocoran\njurusan kuliah dengan 1.000+ kakak mahasiswa\ndi universitas terbaik dalam dan luar negeri. GRATIS!"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/deskripsi2LoginTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/deskripsiLoginTextView"
+                    android:text="Bijak pilih jurusan, cerahkan masa depan!"
+                    android:textStyle="bold"
+                    android:textAlignment="center" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/loginFacebookButton"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/but_signup_fb2"
+                    android:layout_below="@id/deskripsi2LoginTextView"
+                    android:layout_marginTop="16sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/loginTwitterButton"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/but_signup_tw2"
+                    android:layout_below="@id/loginFacebookButton"
+                    android:layout_marginTop="8sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/alreadyHaveAccountTextView"
+                    android:text="Sudah punya akun? Masuk disini"
+                    android:layout_below="@id/loginTwitterButton"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="24sp" />
+
+            </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="24sp"
+    android:gravity="bottom"
+    android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:id="@+id/registerLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:weightSum="1">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/registerButton"
+                android:text="Register"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

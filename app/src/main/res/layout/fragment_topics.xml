@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/deskripsiListTopicTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih jurusan kuliah yang ingin kamu ikuti di ruang publik disini"
+        android:textSize="18sp"
+        android:layout_marginTop="16sp"
+        android:layout_marginLeft="16sp"
+        android:layout_marginRight="16sp"
+        android:paddingLeft="16sp"
+        android:paddingRight="16sp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+
+    <SearchView
+        android:id="@+id/listTopicsSearchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deskripsiListTopicTextView"
+        android:queryHint="Cari nama jurusannya"
+        android:layout_margin="8sp" />
+
+    <ListView
+        android:id="@+id/topicsListView"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/listTopicsSearchBar"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

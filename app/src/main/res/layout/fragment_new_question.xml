@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="225sp"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="16sp"
+        android:layout_marginLeft="16sp"
+        android:layout_marginRight="16sp"
+        android:hint="Apa pertanyaanmu?"
+        android:ems="10"
+        android:gravity="top"
+        android:padding="16sp"
+        android:id="@+id/pertanyaanEditText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="#EEEEEE"/>
+
+    <TextView
+        android:id="@+id/contohPertanyaanTextView"
+        android:layout_below="@id/pertanyaanEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lihat Contoh Pertanyaan"
+        android:layout_alignLeft="@id/pertanyaanEditText"
+        android:layout_marginTop="16sp"
+        android:textColor="@color/primaryColor"
+        android:textSize="16sp"
+        android:textStyle="italic"/>
+
+    <ImageView
+        android:id="@+id/pilihTopikButton"
+        android:layout_below="@id/contohPertanyaanTextView"
+        android:layout_alignLeft="@id/contohPertanyaanTextView"
+        android:layout_marginTop="16sp"
+        android:layout_width="150sp"
+        android:layout_height="60sp"
+        android:src="@drawable/but_pilih_topik"
+        android:background="@color/primaryColor"/>
+
+    <TextView
+        android:id="@+id/topikDipilihTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pilihTopikButton"
+        android:layout_alignLeft="@id/pilihTopikButton"
+        android:layout_marginTop="16sp"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/submitPertanyaanButton"
+        android:layout_below="@id/topikDipilihTextView"
+        android:layout_alignLeft="@id/contohPertanyaanTextView"
+        android:layout_marginTop="16sp"
+        android:layout_width="100sp"
+        android:layout_height="40sp"
+        android:src="@drawable/but_kirim"
+        android:textStyle="bold"
+        android:background="#FFEB3B"/>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="84sp"
+    android:padding="4sp">
+    
+    <ImageView
+        android:id="@+id/profileListKakakImageView"
+        android:layout_width="68sp"
+        android:layout_height="68sp"
+        android:adjustViewBounds="true"
+        android:layout_margin="8sp"
+        android:src="@drawable/prof_pic"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/listRelLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:layout_marginLeft="8sp">
+
+            <TextView
+                android:id="@+id/nameListKakakTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Kakak"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/majorListKakakTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Major"
+                android:textSize="16sp"
+                android:layout_marginTop="4sp"
+                android:layout_below="@id/nameListKakakTextView"/>
+
+            <TextView
+                android:id="@+id/universityListKakakTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="University"
+                android:textSize="16sp"
+                android:layout_marginTop="4sp"
+                android:layout_below="@id/majorListKakakTextView"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/bintangListKakakImageView"
+            android:layout_width="100sp"
+            android:layout_height="35sp"
+            android:src="@drawable/star1"
+            android:layout_marginLeft="16sp"
+            android:layout_marginRight="16sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</LinearLayout>

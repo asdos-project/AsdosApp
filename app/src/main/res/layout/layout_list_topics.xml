@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="56sp"
+    android:layout_marginLeft="10sp"
+    android:layout_marginRight="10sp"
+    android:layout_margin="4sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4sp" >
+
+        <ImageView
+            android:id="@+id/logoTopicsListTopicsImageView"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:src="@drawable/jur_semua"
+            android:layout_margin="4sp" />
+
+        <TextView
+            android:id="@+id/jurusanTopicsListTopicsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semua"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="8sp"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/listTopicsCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16sp"/>
+</RelativeLayout>

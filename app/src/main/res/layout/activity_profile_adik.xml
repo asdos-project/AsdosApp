@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".mainMenu.profile.ProfileAdikActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarProfileAdik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/primaryColor"
+            android:elevation="6sp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="175sp"
+            android:id="@+id/profileUserImageView"
+            android:layout_below="@id/toolbarProfileAdik"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:padding="8sp"
+            android:layout_marginBottom="16sp"
+            android:src="@drawable/prof_pic"
+            />
+
+        <TextView
+            android:id="@+id/nameUserTextView"
+            android:text="Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profileUserImageView"
+            android:layout_centerHorizontal="true"
+            android:textSize="28sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/schoolTextView"
+            android:text="School"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameUserTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8sp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/jumlahPertanyaanTextView"
+            android:text="0 pertanyaan diajukan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/schoolTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8sp"
+            android:textStyle="italic"
+            android:textColor="@color/primaryColor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/aboutMeUserTextView"
+            android:text="About Me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jumlahPertanyaanTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24sp"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/aboutMeUserDetTextView"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aboutMeUserTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16sp"
+            android:layout_marginLeft="24sp"
+            android:layout_marginRight="24sp"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_marginBottom="24sp"/>
+
+    </RelativeLayout>
+
+</ScrollView>
